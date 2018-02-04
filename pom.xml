@@ -161,6 +161,19 @@
       </plugins>
     </pluginManagement>
   </build>
+         
+  <distributionManagement>
+        <repository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://46.101.150.177:8081/nexus/content/repositories/SAMPLE-REL/</url>
+        </repository>
+        <snapshotRepository>
+            <id>deployment</id>
+            <name>Internal Snapshot Releases</name>
+            <url>http://46.101.150.177:8081/nexus/content/repositories/SAMPLE-SNAP/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
   <dependencyManagement>
     <dependencies>
